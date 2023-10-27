@@ -1,0 +1,55 @@
+/* :root{
+  background: red;
+}
+
+html {
+  max-width: 720px;
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+
+*{
+  color: red;
+}
+h1{
+  color:green;
+}
+.box{
+  background:#cecbcb;
+}
+#user{
+  background: purple;
+}
+div > p{
+  color:yellow;
+} */
+.card-dark{
+  background: #cccbcb;
+}
+.item{
+  color: green;
+}
+.item:first-child{
+  color: red;
+}
+.item:last-child{
+  color: yellow;
+}
+#test:target {
+  color: red;
+}
+.link:link {
+  color: red;
+}
+.card:hover {
+  background: green;
+}
+.card:active {
+  background: purple;
+}
+input:focus {
+  background: yellow;
+}
