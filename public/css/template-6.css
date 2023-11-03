@@ -49,9 +49,9 @@
 .logo {
   font-size: 17px;
   background: var(--color-primary);
-  color:var(--color-white);
-  width: 24px;
-  height: 24px;
+  color: var(--color-white);
+  width: var(--space-l) ;
+  height: var(--space-l);;
   border-radius: calc(var(--border-radius-d) / 2) ;
   display: flex;
   justify-content: center;
@@ -209,10 +209,10 @@ background: #F8F9FA;
 }
 .updates {
   display: flex;
-  padding: 24px;
+  padding: var(--space-l);
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: var(--space-l);
 }
 .updates_title {
   display: flex;
