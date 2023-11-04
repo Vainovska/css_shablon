@@ -110,8 +110,8 @@
   gap: 40px
 }
 .message {
-  max-width: 620px;
-  width: 100%;
+  /* max-width: 620px;
+  width: 100%; */
   background-color: var(--color-white);
   border-radius: var(--border-radius-d);
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
@@ -142,8 +142,8 @@
   border-color: var(--color-primary);
 }
 .form {
-  max-width: 340px;
-  width: 100%;
+  /* max-width: 340px;
+  width: 100%; */
   background-color: var(--color-white);
   border-radius: var(--border-radius-d);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -265,4 +265,25 @@
   color: #767676;
   font-size: var(--size-d);
   line-height: 150%;
+}
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  grid-template-areas: "message message form" "advantages advantages advantages";
+}
+.message {
+  grid-area: message;
+}
+.form {
+  grid-area: form;
+}
+.advantages {
+  grid-area: advantages;
 }
