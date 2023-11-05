@@ -1,0 +1,65 @@
+        <header class="header">
+            <div class="header_top">
+                <div class="lodo">
+                    {{> logo_new data=header}}
+                </div>
+
+                <nav class="header-nav">
+                    <div class="header_nav_right">
+                        {{> nav_new data=header}}
+                    </div>
+                </nav>
+            </div>
+            <div class="header_bottom">
+                <div class="ad">
+                    <div>Ad</div>
+                    <p class="ad_link">{{header.ad.text}} {{header.ad.url}}</p>
+                </div>
+                <div class="user">Users online: {{header.userOnline}}</div>
+            </div>
+        </header>
+        {{#with hero}}
+        <div class="hero">
+            <h1 class="hero_title">{{title}}</h1>
+            <p class="hero_desc">{{description}}</p>
+            <a href="{{button.url}}" class="hero_button">{{button.text}}</a>
+        </div>
+        {{/with}}
+        <main class="main">
+            {{#with about}}
+            <div class="about">
+                <h2 class="about_heading">{{heading}}</h2>
+                <p class="about_info">{{info}}</p>
+            </div>
+            {{/with}}
+            <div class="articles">
+                <div class="articles_header">
+                    <h4 class="articles_title">Our Articles</h4>
+                    <a href="#" class="article_header_button">View All</a>
+                </div>
+                <div class="articles_item">
+                    {{#each articles}}    
+                    <div>            
+                        <img src="{{photo}}" alt="articles_photo" id="{{id}}" class="articles_img">
+                        <h3 class="articles_name">{{name}}</h3>
+                        <p class="articles_description">{{description}}</p>
+                        <a href="#" class="articles_button">Read All</a>
+                    </div>
+                    {{/each}}
+                </div>
+                
+            </div>
+        </main>
+                      
+        <footer class="footer">
+           {{#with footer}} 
+            <div class="pages">
+                <div class="nav">
+                    {{#each pages}}
+                    <a href="{{path}}" class="nav_link">{{name}}</a>
+                    {{/each}}
+                </div>
+                <div class="pages_copy">{{copyright}}</div>
+            </div>
+            {{/with}}
+        </footer>
