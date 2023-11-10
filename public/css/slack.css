@@ -67,7 +67,7 @@ body {
     background-color: var(--color-white);
 }
 :root {
-    --color-white: #fffffff;
+    --color-white: #ffffff;
     --color-black: #000;
     --color-primary: #611f69;
     --color-light: #f4ede4;
